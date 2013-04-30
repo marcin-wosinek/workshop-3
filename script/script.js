@@ -2,7 +2,7 @@
 var workshop = angular.module("workshop", []);
 
 // Create routes
-workshop.config(function($routeProvider) {
+workshop.config(function ($routeProvider) {
   $routeProvider
     .when("/list", {
       templateUrl: "views/list.html",
@@ -13,6 +13,13 @@ workshop.config(function($routeProvider) {
     });
 });
 
-workshop.controller("ListCtrl", function($scope) {
+workshop.controller("ListCtrl", function ($scope, IndexedDb) {
   $scope.hello = "Hello World";
+  $scope.isSupported = IndexedDb.isSupported;
+});
+
+workshop.factory("IndexedDb", function ($window) {
+  return {
+    isSupported: typeof $window.indexedDB !== 'undefined'
+  };
 });
