@@ -1,5 +1,20 @@
-<ul>
-  <li ng-repeat="contact in contacts">
-    {{contact.firstName}} {{contact.lastName}}
-  </li>
-</ul>
+<table>
+  <tr>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Company</th>
+    <th>Phone</th>
+    <th>Email</th>
+  </tr>
+  <tr ng-repeat="contact in contacts">
+    <td>{{contact.firstName}}</td>
+    <td>{{contact.lastName}}</td>
+    <td>{{contact.age}}</td>
+    <td>{{contact.gender}}</td>
+    <td>{{contact.company}}</td>
+    <td>{{contact.phone}}</td>
+    <td>{{contact.email}}</td>
+  </tr>
+</table>
