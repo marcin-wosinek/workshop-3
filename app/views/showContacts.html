@@ -1,20 +1,14 @@
 <table>
   <tr>
+    <th></th>
     <th>First name</th>
     <th>Last name</th>
-    <th>Age</th>
-    <th>Gender</th>
-    <th>Company</th>
-    <th>Phone</th>
-    <th>Email</th>
+    <th></th>
   </tr>
   <tr ng-repeat="contact in contacts">
+    <td><a ng-href="#/contact/{{contact.id}}/view">view</a></td>
     <td>{{contact.firstName}}</td>
     <td>{{contact.lastName}}</td>
-    <td>{{contact.age}}</td>
-    <td>{{contact.gender}}</td>
-    <td>{{contact.company}}</td>
-    <td>{{contact.phone}}</td>
-    <td>{{contact.email}}</td>
+    <td><a ng-href="#/contact/{{contact.id}}/edit">edit</a></td>
   </tr>
 </table>
