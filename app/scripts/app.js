@@ -11,6 +11,10 @@ angular.module('workshop2App', [])
         templateUrl: 'views/showContacts.html',
         controller: 'ShowContactsCtrl'
       })
+      .when('/contactView', {
+        templateUrl: 'views/contactView.html',
+        controller: 'ContactViewCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
