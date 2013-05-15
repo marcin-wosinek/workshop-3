@@ -2,6 +2,15 @@ node_modules
 dist
 .tmp
 .sass-cache
-app/components
 *.swp
 *.swo
+# exclude all compontents files, but compiled files
+app/components/*
+!app/components/underscore
+!app/components/angular
+
+app/components/underscore/*
+app/components/angular/*
+
+!app/components/underscore/underscore.js
+!app/components/angular/angular.js
