@@ -18,7 +18,7 @@ angular.module('workshop2App', [])
         templateUrl: 'views/contactView.html',
         controller: 'ContactViewCtrl'
       })
-      .when('/contactEdit', {
+      .when('/contact/:id/edit', {
         templateUrl: 'views/contactEdit.html',
         controller: 'ContactEditCtrl'
       })
