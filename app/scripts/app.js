@@ -18,6 +18,10 @@ angular.module('workshop2App', [])
         templateUrl: 'views/contactView.html',
         controller: 'ContactViewCtrl'
       })
+      .when('/contactEdit', {
+        templateUrl: 'views/contactEdit.html',
+        controller: 'ContactEditCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
