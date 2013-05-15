@@ -1,6 +1,6 @@
 'use strict';
 
 angular.module('workshop2App')
-  .controller('ContactViewCtrl', function ($scope, $routeParams) {
-    $scope.contact = $routeParams.id;
+  .controller('ContactViewCtrl', function ($scope, $routeParams, contacts) {
+    $scope.contact = contacts.get($routeParams.id);
   });

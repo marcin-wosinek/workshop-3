@@ -65,6 +65,12 @@ angular.module('workshop2App')
     return {
       getAll: function () {
         return exampleContacts;
+      },
+      get: function (id) {
+        var found = _.find(exampleContacts, function (item) {
+          return item.id == id;
+        });
+        return found;
       }
     };
   });
