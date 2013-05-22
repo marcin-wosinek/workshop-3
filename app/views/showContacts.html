@@ -8,8 +8,8 @@
       <span>Last name</span>:
       <span>Age</span>-
     </li>
-    <!-- TODO: Use animation when there are changes on list. Checkout http://www.nganimate.org for inspiration -->
-    <li ng-repeat="contact in contacts | between:'age':min:max">
+    <!-- Use animation when there are changes on list. Checkout http://www.nganimate.org for inspiration -->
+    <li ng-animate="'animate'" ng-repeat="contact in contacts | between:'age':min:max">
       <span><a ng-href="#/contact/{{contact.id}}/view">view</a></span>-
       <span>{{contact.firstName}}</span>:
       <span>{{contact.lastName}}</span>:
