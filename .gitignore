@@ -7,10 +7,10 @@ dist
 # exclude all compontents files, but compiled files
 app/components/*
 !app/components/underscore
-!app/components/angular
+!app/components/unstable-angular-complete
 
 app/components/underscore/*
-app/components/angular/*
+app/components/unstable-angular-complete/*
 
 !app/components/underscore/underscore.js
-!app/components/angular/angular.js
+!app/components/unstable-angular-complete/angular.js
