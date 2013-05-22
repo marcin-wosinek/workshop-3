@@ -2,7 +2,28 @@
 
 angular.module('workshop2App')
   .factory('contacts', function () {
-    // Service logic
+    /* http://www.json-generator.com/ recipe
+[
+    '{{repeat(5)}}',
+    {
+        id: '{{index}}',
+        guid: '{{guid}}',
+        age: '{{numeric(20,40)}}',
+        firstName: '{{firstName}}',
+        lastName: '{{lastName}}',
+        gender: function(idx) {
+            return this.bool() ? 'male' : 'female';
+        },
+        company: '{{company}}',
+        phone: '{{phone}}',
+        email: '{{email}}',
+        tags: [
+            '{{repeat(7)}}',
+            '{{lorem(1)}}'
+        ]
+    }
+]
+       */
     var exampleContacts = [
       {
         "id": 1,
