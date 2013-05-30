@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('workshop2App', [])
+angular.module('workshop2App', ['ngCookies'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {

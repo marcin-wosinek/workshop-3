@@ -14,3 +14,4 @@ app/components/unstable-angular-complete/*
 
 !app/components/underscore/underscore.js
 !app/components/unstable-angular-complete/angular.js
+!app/components/unstable-angular-complete/angular-cookies.js
