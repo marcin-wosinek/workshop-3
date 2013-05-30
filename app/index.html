@@ -23,7 +23,9 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-view></div>
+    <div ng-controller="GlobalCtrl">
+      <div class="container" ng-view></div>
+    </div>
 
     <script src="components/unstable-angular-complete/angular.js"></script>
     <script src="components/unstable-angular-complete/angular-cookies.js"></script>
@@ -37,6 +39,7 @@
     <script src="scripts/controllers/contactView.js"></script>
     <script src="scripts/controllers/contactEdit.js"></script>
     <script src="scripts/filters/between.js"></script>
+    <script src="scripts/controllers/global.js"></script>
     <!-- endbuild -->
   </body>
 </html>
