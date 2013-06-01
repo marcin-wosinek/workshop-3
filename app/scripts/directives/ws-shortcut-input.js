@@ -5,9 +5,8 @@ angular.module('workshop2App')
     return {
       template: '{{label}}: <input ng-model="number" />',
       restrict: 'A',
-      scope: {},
-      link: function (scope, element, attrs)  {
-        scope.label = attrs.wsLabel;
+      scope: {
+        label: '@wsLabel'
       }
     };
   });
