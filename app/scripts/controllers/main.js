@@ -6,6 +6,10 @@ angular.module('workshop2App')
       {
         label: 'Show contacts',
         path: '/showContacts'
+      },
+      {
+        label: 'Show page',
+        path: '/page'
       }
     ];
   });
