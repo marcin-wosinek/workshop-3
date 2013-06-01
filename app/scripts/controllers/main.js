@@ -10,6 +10,10 @@ angular.module('workshop2App')
       {
         label: 'Show page',
         path: '/page'
+      },
+      {
+        label: 'Shortcuts',
+        path: '/shortcuts'
       }
     ];
   });

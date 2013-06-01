@@ -26,6 +26,10 @@ angular.module('workshop2App', ['ngCookies'])
         templateUrl: 'views/page.html',
         controller: 'PageCtrl'
       })
+      .when('/shortcuts', {
+        templateUrl: 'views/shortcuts.html',
+        controller: 'ShortcutsCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
