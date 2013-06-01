@@ -22,6 +22,10 @@ angular.module('workshop2App', ['ngCookies'])
         templateUrl: 'views/contactEdit.html',
         controller: 'ContactEditCtrl'
       })
+      .when('/page', {
+        templateUrl: 'views/page.html',
+        controller: 'PageCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
