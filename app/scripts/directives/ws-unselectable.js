@@ -3,10 +3,14 @@
 angular.module('workshop2App')
   .directive('wsUnselectable', function () {
     return {
-      template: '<div></div>',
-      restrict: 'E',
+      restrict: 'A',
       link: function postLink(scope, element, attrs) {
-        element.text('this is the wsUnselectable directive');
+        element.bind('mousedown', function(e) {
+          e.preventDefault();
+        });
+        element.bind('selectstart', function(e) {
+          e.preventDefault();
+        });
       }
     };
   });
