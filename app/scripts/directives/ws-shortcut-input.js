@@ -3,10 +3,10 @@
 angular.module('workshop2App')
   .directive('wsShortcutInput', function () {
     return {
-      template: '<div></div>',
-      restrict: 'E',
-      link: function postLink(scope, element, attrs) {
-        element.text('this is the wsShortcutInput directive');
+      template: '{{label}}: <input ng-model="number" />',
+      restrict: 'A',
+      link: function (scope, element, attrs)  {
+        scope.label = attrs.wsLabel;
       }
     };
   });
