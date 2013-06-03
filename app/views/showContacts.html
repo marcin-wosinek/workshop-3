@@ -2,20 +2,19 @@
   <h2>Limit age</h2>
   Min: <input type="range" step="1" min="20" max="40" ng-model="min">{{min}} <br>
   Max: <input type="range" step="1" min="20" max="40" ng-model="max">{{max}}
-  <table>
-    <tr>
-      <th></th>
-      <th>First name</th>
-      <th>Last name</th>
-      <th>Age</th>
-      <th></th>
-    </tr>
-    <tr ng-repeat="contact in contacts | between:'age':min:max">
-      <td><a ng-href="#/contact/{{contact.id}}/view">view</a></td>
-      <td>{{contact.firstName}}</td>
-      <td>{{contact.lastName}}</td>
-      <td>{{contact.age}}</td>
-      <td><a ng-href="#/contact/{{contact.id}}/edit">edit</a></td>
-    </tr>
-  </table>
+  <ul>
+    <li>
+      -<span>First name</span>:
+      <span>Last name</span>:
+      <span>Age</span>-
+    </li>
+    <!-- TODO: Use animation when there are changes on list. Checkout http://www.nganimate.org for inspiration -->
+    <li ng-repeat="contact in contacts | between:'age':min:max">
+      <span><a ng-href="#/contact/{{contact.id}}/view">view</a></span>-
+      <span>{{contact.firstName}}</span>:
+      <span>{{contact.lastName}}</span>:
+      <span>{{contact.age}}</span>-
+      <span><a ng-href="#/contact/{{contact.id}}/edit">edit</a></span>
+    </li>
+  </ul>
 </div>
