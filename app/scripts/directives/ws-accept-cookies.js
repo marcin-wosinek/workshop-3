@@ -11,6 +11,9 @@ angular.module('workshop2App')
       restrict: 'A',
       transclude: true,
       link: function postLink(scope, element, attrs) {
+        // TODO: accept button logic
+
+        // TODO: hide element if cookies are already accepted
       }
     };
   });
