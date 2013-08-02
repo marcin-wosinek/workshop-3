@@ -1,0 +1,11 @@
+{
+  "id": 3,
+  "guid": "d47a1450-888d-431c-baae-8e3cb23dc008",
+  "age": 25,
+  "firstName": "Hannah",
+  "lastName": "Wainwright",
+  "gender": "female",
+  "company": "Robotomic",
+  "phone": "846-414-3956",
+  "email": "hannah@robotomic.com"
+}

@@ -1,0 +1,11 @@
+{
+  "id": 1,
+  "guid": "a156e9c1-6b69-408b-b4e1-99c67be2c86b",
+  "age": 38,
+  "firstName": "Riley",
+  "lastName": "Day",
+  "gender": "female",
+  "company": "Xeicon",
+  "phone": "873-503-2659",
+  "email": "riley@xeicon.com"
+}
