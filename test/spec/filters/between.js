@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Filter: between', function () {
+xdescribe('Filter: between', function () {
 
   // load the filter's module
   beforeEach(module('workshop2App'));

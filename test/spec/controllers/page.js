@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Controller: PageCtrl', function () {
+xdescribe('Controller: PageCtrl', function () {
 
   // load the controller's module
   beforeEach(module('workshop2App'));

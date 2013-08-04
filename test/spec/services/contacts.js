@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Service: contacts', function () {
+xdescribe('Service: contacts', function () {
 
   // load the service's module
   beforeEach(module('workshop2App'));

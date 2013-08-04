@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Directive: wsUnselectable', function () {
+xdescribe('Directive: wsUnselectable', function () {
   beforeEach(module('workshop2App'));
 
   var element;

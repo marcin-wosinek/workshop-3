@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Directive: wsAcceptCookies', function () {
+xdescribe('Directive: wsAcceptCookies', function () {
   beforeEach(module('workshop2App'));
 
   var element;

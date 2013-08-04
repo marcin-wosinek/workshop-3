@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Controller: ShortcutsCtrl', function () {
+xdescribe('Controller: ShortcutsCtrl', function () {
 
   // load the controller's module
   beforeEach(module('workshop2App'));

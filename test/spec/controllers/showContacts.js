@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Controller: ShowContactsCtrl', function () {
+xdescribe('Controller: ShowContactsCtrl', function () {
 
   // load the controller's module
   beforeEach(module('workshop2App'));

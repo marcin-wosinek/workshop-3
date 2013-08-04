@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Service: wsUuidGenerator', function () {
+xdescribe('Service: wsUuidGenerator', function () {
 
   // load the service's module
   beforeEach(module('workshop2App'));

@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Directive: wsShortcutInput', function () {
+xdescribe('Directive: wsShortcutInput', function () {
   beforeEach(module('workshop2App'));
 
   var element;

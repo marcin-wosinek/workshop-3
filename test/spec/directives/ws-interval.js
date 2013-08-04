@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Directive: wsInterval', function () {
+xdescribe('Directive: wsInterval', function () {
   beforeEach(module('workshop2App'));
 
   var element;
