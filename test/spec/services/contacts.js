@@ -1,6 +1,11 @@
 'use strict';
 
-xdescribe('Service: contacts', function () {
+describe('Service: contacts', function () {
+  var ContactsResource = {
+      query: jasmine.createSpy('query'),
+      get: jasmine.createSpy('get')
+    },
+    _resource = jasmine.createSpy('_resource').andReturn(ContactsResource);
 
   // load the service's module
   beforeEach(module('workshop2App'));
@@ -11,8 +16,10 @@ xdescribe('Service: contacts', function () {
     contacts = _contacts_;
   }));
 
-  it('should do something', function () {
+  it('should be defined', function () {
     expect(!!contacts).toBe(true);
+    expect(contacts.get).toBeFunction();
+    expect(contacts.getAll).toBeFunction();
   });
 
 });
