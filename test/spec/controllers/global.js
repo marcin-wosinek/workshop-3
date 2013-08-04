@@ -35,10 +35,10 @@ describe('Controller: GlobalCtrl', function () {
     // verify if wsUuidGenerator.createUuid is fired
     expect(wsUuidGenerator.createUuid).toHaveBeenCalled();
 
-    // TODO: should not override existing cookie value
+    // should not override existing cookie value
     wsUuidGenerator.createUuid.andReturn('111');
     init();
-    expect(cookies.trackingId).toEqual('111');
+    expect(cookies.trackingId).toEqual('341');
   });
 
   it('should setup cookies - check other value', function () {
