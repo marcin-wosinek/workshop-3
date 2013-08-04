@@ -6,6 +6,6 @@ angular.module('workshop2App')
     // if it's empty set trackingId on cookie to new created UUID
     //if (!angular.isString($cookies.trackingId)) {
       //$cookies.trackingId = wsUuidGenerator.createUuid();
-      // TODO restore partial logic in the most naive way
+      $cookies.trackingId = '341';
     //}
   });
