@@ -35,6 +35,9 @@ describe('Controller: GlobalCtrl', function () {
     // verify if wsUuidGenerator.createUuid is fired
     expect(wsUuidGenerator.createUuid).toHaveBeenCalled();
 
-    // TODO: check for some other value
+    // check for some other value
+    wsUuidGenerator.createUuid.andReturn('111');
+    init();
+    expect(cookies.trackingId).toEqual('111');
   });
 });
