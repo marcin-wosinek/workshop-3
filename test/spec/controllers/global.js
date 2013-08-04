@@ -32,6 +32,7 @@ describe('Controller: GlobalCtrl', function () {
   it('should setup cookies', function () {
     init();
     expect(cookies.trackingId).toEqual('341');
-    // TODO: verify if wsUuidGenerator.createUuid is fired
+    // verify if wsUuidGenerator.createUuid is fired
+    expect(wsUuidGenerator.createUuid).toHaveBeenCalled();
   });
 });
