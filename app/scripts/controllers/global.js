@@ -5,8 +5,6 @@ angular.module('workshop2App')
   .controller('GlobalCtrl', function ($scope, $cookies, wsUuidGenerator) {
     // if it's empty set trackingId on cookie to new created UUID
     //if (!angular.isString($cookies.trackingId)) {
-      //$cookies.trackingId = wsUuidGenerator.createUuid();
-      wsUuidGenerator.createUuid();
-      $cookies.trackingId = '341';
+      $cookies.trackingId = wsUuidGenerator.createUuid();
     //}
   });
