@@ -8,7 +8,8 @@ describe('Controller: GlobalCtrl', function () {
   var GlobalCtrl,
     scope,
     cookies,
-    wsUuidGenerator;
+    wsUuidGenerator,
+    init;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
@@ -19,14 +20,17 @@ describe('Controller: GlobalCtrl', function () {
       createUuid: jasmine.createSpy('createUuid').andReturn('341')
     };
 
-    GlobalCtrl = $controller('GlobalCtrl', {
-      $scope: scope,
-      $cookies: cookies,
-      wsUuidGenerator: wsUuidGenerator
-    });
+    init = function () {
+      GlobalCtrl = $controller('GlobalCtrl', {
+        $scope: scope,
+        $cookies: cookies,
+        wsUuidGenerator: wsUuidGenerator
+      });
+    }
   }));
 
   it('should setup cookies', function () {
+    init();
     expect(cookies.trackingId).toEqual('341');
   });
 });
